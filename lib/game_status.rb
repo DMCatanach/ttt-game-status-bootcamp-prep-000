@@ -32,3 +32,7 @@ end
 def over?(board)
   won?(board) || draw?(board)
 end
+
+def winner(board)
+  #code to determine winner, which is probably much simpler than I've been thinking 
+end 
