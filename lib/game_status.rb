@@ -26,5 +26,5 @@ def full?(board) #this method works, yay
 end
 
 def draw?(board)
-  #code that I have written down in my notebook and is also in chat transcript
+  full?(board) && (won?(board) == false)
 end 
