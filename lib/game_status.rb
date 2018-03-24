@@ -34,5 +34,6 @@ def over?(board)
 end
 
 def winner(board)
-  #code to determine winner, which is probably much simpler than I've been thinking 
-end 
+  #code to determine winner, which is probably much simpler than I've been thinking
+  won?(board).detect {|i| i == "X" || "O"}
+end
