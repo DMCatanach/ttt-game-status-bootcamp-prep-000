@@ -40,8 +40,6 @@ def winner(board)
       return "X"
     elsif move == "O"
       return "O"
-    else
-      return nil
     end #close conditional
   end #close iteration 
 end #close method definition
