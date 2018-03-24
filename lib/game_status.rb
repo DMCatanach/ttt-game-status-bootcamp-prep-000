@@ -15,7 +15,7 @@ WIN_COMBINATIONS = [
   [2,4,6] #right diagonal win
 ]
 
-def won?(board) 
+def won?(board)
   WIN_COMBINATIONS.detect do |combination|
     board[combination[0]] == board[combination[1]] && board[combination[1]] == board[combination[2]] && position_taken?(board, combination[0])
   end #close iteration
@@ -25,6 +25,6 @@ def full?(board) #this method works, yay
   !(board.include?(" "))
 end
 
-def draw?(board) 
+def draw?(board)
   #code that I have written down in my notebook and is also in chat transcript
 end 
