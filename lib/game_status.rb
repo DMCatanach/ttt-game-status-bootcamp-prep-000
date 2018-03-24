@@ -35,6 +35,6 @@ end
 
 def winner(board)
   if won?(board)
-    return board[won?(board).first]
+    return board[won?(board)[0]]
   end #close conditional
 end #close method definition
