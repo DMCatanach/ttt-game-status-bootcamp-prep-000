@@ -34,8 +34,7 @@ def over?(board)
 end
 
 def winner(board)
-  #code to determine winner, which is probably much simpler than I've been thinking
   if won?(board)
-    return board[won?(board).first]#something
+    return board[won?(board).first]
   end #close conditional
 end #close method definition
