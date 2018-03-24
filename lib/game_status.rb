@@ -35,5 +35,13 @@ end
 
 def winner(board)
   #code to determine winner, which is probably much simpler than I've been thinking
-  won?(board).detect {|i| i == "X" || "O"}
-end
+  won?(board).detect do |move|
+    if move == "X"
+      return "X"
+    elsif move == "O"
+      return "O"
+    else
+      return nil
+    end #close conditional
+  end #close iteration 
+end #close method definition
