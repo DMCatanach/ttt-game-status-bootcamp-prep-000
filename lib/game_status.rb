@@ -35,7 +35,7 @@ end
 
 def winner(board)
   #code to determine winner, which is probably much simpler than I've been thinking
-  if won?(board)
-    return won?(board)[0.first]
+  if winning == won?(board)
+    return won?(board)[winning.first]
   end
 end #close method definition
